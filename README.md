@@ -5,7 +5,7 @@ To summarize, I didn't succeed in any of the "classic" CTF categories (pwn, web,
 held enough points to put Redstone Blockchain at #35 overall (out of ~1k) and #2 German team.
 
 As in [last year's edition](https://github.com/redstoneblockchain/X-MAS-2019) of the HTsP X-MAS CTF, the challenges
-were very cool and I had a great time. Please enjoy these writeups until we meet again next year :)
+were very cool and I had a great time. Please enjoy this selection of writeups until we meet again next year :)
 
 **Categories** this year:
 
