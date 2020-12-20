@@ -86,7 +86,7 @@ Ok, we can `xor` bytes and messages are zero-padded. The hasher itself contains:
 The real meat lies in the `update` function, which hashes the message in blocks of 16 bytes. We can safely assume that `self.get_elem`
 is a one-way function, so clearly we have to make something clever out of the `xor` of `self.hash` and the current message block.
 
-Let us consider what happens when `msg` is `0`:
+Let us consider what happens when `msg` is `0` (well, `00` to be a valid hex byte string):
 
 <img src="https://render.githubusercontent.com/render/math?math=h(state=0, msg=0) = 0 \oplus AES(0 \oplus 0) = AES(0)">
 
@@ -100,7 +100,7 @@ Well, that's it! Any message starting with 16 zero bytes followed by the hash of
 initial state of the hash. The solution is thus to choose `1`, hash the hex string `0` with result `h0`, then choose `2` and provide
 an arbitrary string `x` as well as `000000000000000000000000000000<h0><x>` to produce a collision.
 
-![image](https://user-images.githubusercontent.com/6524684/102718944-5114d680-42eb-11eb-8445-088f88fd9534.png)
+![image](https://user-images.githubusercontent.com/6524684/102719036-d304ff80-42eb-11eb-89fa-77924f53d533.png)
 
 ---
 
