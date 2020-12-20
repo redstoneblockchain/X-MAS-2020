@@ -169,6 +169,9 @@ stuff would look like:
 ---
 
 All in all, this was an exciting project, and while the result is not fully what I originally had in mind, it turned out better than I hoped!
-Really looking forward to next year's emu challenge and demo party. Maybe it's about time to implement a game? :)
+I think this was the only demo to focus on being very small. So small, in fact, that this entire demo is several times smaller than *a single frame*
+of any of the other video-based demos.
+
+Thanks trupples for creating these emu challenges and Milkdrop for wrapping it all into a flavorful package. Really looking forward to next year's emu challenge and demo party. Maybe it's about time we implement a game? :)
 
 ![image](https://user-images.githubusercontent.com/6524684/102724404-9945f000-430f-11eb-8404-1e0ff2a9c631.png)
