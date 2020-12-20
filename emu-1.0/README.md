@@ -11,7 +11,7 @@ The current issue is they can't find a working EMU 1.0 machine to actually run t
 **Files (cached):** [mandelbrot.rom](https://github.com/redstoneblockchain/X-MAS-2020/tree/main/emu-1.0/files/mandelflag.rom),
 [Thalias_EMU_1.0_Manual.pdf](https://github.com/redstoneblockchain/X-MAS-2020/tree/main/emu-1.0/files/Tahlias_EMU_1.0_Manual.pdf)  
 
-![image](https://user-images.githubusercontent.com/6524684/102719337-ce414b00-42ed-11eb-8ee7-0e97948d56c3.png)
+![image](https://user-images.githubusercontent.com/6524684/102720439-a99ca180-42f4-11eb-9939-5f5edec00ece.png)
 
 ---
 
