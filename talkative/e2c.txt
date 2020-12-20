@@ -1,0 +1,89 @@
+0:
+r12 = 61 // r12  ':'
+r13 = 36 // r13  ' '
+
+// Find a connection that has at least 40 bytes in the buffer
+512_POLL:
+io(ENET_CONN_CTRL, 2)
+r1 = io(ENET_INCOMING, 0)
+if (r1 < 40)
+  goto 512_POLL
+
+
+r50 = 62  // r50
+r8 = io(ENET_RECV, 0) // r8
+r9 = io(ENET_RECV, 0) // r9
+r10 = io(ENET_RECV, 0) // 10
+r11 = io(ENET_RECV, 0) // r11
+
+// for (i = 14; i < 50; ++i)
+//   [i] = readNetwork()
+r2 = 14
+513_READ:
+r1 = io(ENET_RECV, 0)
+[r2] = r1
+r2++
+if (r2 < 50)
+  jmp 513_READ
+
+
+r2 = 8
+
+// for (i = 8; i < 51; ++i)
+//   cout << [i]
+513_COUT:
+r1 = [r2]
+io(SERIAL_WRITE, r1)
+r2++
+if (r2 < 51)
+  jmp 513_COUT
+  
+// So all the above does is:
+// 1. Read 40 bytes from the first connection providing as many
+// 2. Take the first four of those as user name, rest as message
+// 3. Print user name followed by ": " followed by message, followed by \n
+  
+
+// Flag check
+ok = true
+ok &= r24 == 36
+...
+// Register values starting from r8, skipping 12 and 13:
+// 34, 22, 10, 28, 18, 36, 22, 18, 16, 17, 29, 36, 11, 14, 36, 11, 14, 29, 29, 14, 27, 36, 29, 17, 10, 23, 36, 33, 38, 22, 10, 28, 36, 21, 24, 21, 24, 21, 24, 21
+if (ok)
+  goto 4095_FLAG
+
+
+// markCurrentConnection()
+io(ENET_CONN_CTRL, 1)
+
+// if (advanceConnection().isMarked())
+//   main() // :P
+513_SEND_LOOP:
+io(SERIAL_WRITE, 33)
+r1 = io(ENET_CONN_CTRL, 2)
+if (r1 == 1)
+  goto 513_DONE
+
+// for (i = 8; i < 51; ++i)
+//   sendNetwork([i])
+r2 = 8
+514:
+r1 = [r2]
+io(ENET_SEND, r1)
+r2++
+if (r2 < 51)
+  goto 514
+
+goto 513_SEND_LOOP
+
+513_DONE:
+  goto 512_POLL (assuming no 512 in flag section)
+
+
+4095_FLAG:
+r8 = flag[0]
+f9 = flag[1]
+...
+r13 = flag[...]
+...
