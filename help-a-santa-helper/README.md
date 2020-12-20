@@ -4,11 +4,11 @@ Hey, I found some secret server on which Krampus stores his private details.
 It seems like he has some kind of difficult crypto challenge instead of a login, if we pass that we should get access to valuable information.  
 Let's give it a try, what do you say?
 
-**Target:** nc challs.xmas.htsp.ro 1004
+**Target:** nc challs.xmas.htsp.ro 1004  
 **Author:** Gabies  
-**Category:** Cryptography
-**Link (original):** https://drive.google.com/drive/folders/1Ec-Nt1JcZyKwZDEaI8mM6e_80RBZEVuW?usp=sharing
-**Link (cached):** https://github.com/redstoneblockchain/X-MAS-2020/tree/master/help-a-santa-helper/files
+**Category:** Cryptography  
+**Link (original):** https://drive.google.com/drive/folders/1Ec-Nt1JcZyKwZDEaI8mM6e_80RBZEVuW?usp=sharing  
+**Link (cached):** https://github.com/redstoneblockchain/X-MAS-2020/tree/master/help-a-santa-helper/files  
 
 ![image](https://user-images.githubusercontent.com/6524684/102717772-c3ce8380-42e4-11eb-9be3-99a7d31fb548.png)
 
