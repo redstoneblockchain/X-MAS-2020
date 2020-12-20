@@ -2,8 +2,8 @@
 
 Another one of **\*those\*** challenges.
 
-**Target:** http://challs.xmas.htsp.ro:3000/
-**Author:** yakuhito
+**Target:** http://challs.xmas.htsp.ro:3000/  
+**Author:** yakuhito  
 **Category:** Web exploitation
 
 ![image](https://user-images.githubusercontent.com/6524684/102717287-a350fa00-42e1-11eb-94f4-58f11b0b0499.png)
