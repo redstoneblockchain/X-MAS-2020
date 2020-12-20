@@ -15,7 +15,7 @@ Let's give it a try, what do you say?
 ---
 
 The challenge begins (as most crypto challenges here) with a proof of work.
-Thankfully the [`shapow`](https://github.com/krisives/shapow) Kris wrote last year had me covered there.
+Thankfully, the [`shapow`](https://github.com/krisives/shapow) Kris wrote last year had me covered there.
 
 Upon passing the PoW, we get:
 
@@ -96,8 +96,8 @@ We can achieve the former by having the first message block be `0` and the latte
 
 <img src="https://render.githubusercontent.com/render/math?math=h(state=AES(0), msg=AES(0)) = AES(0) \oplus AES(AES(0) \oplus AES(0)) = AES(0) \oplus AES(0) = 0">
 
-Well, that's it! Any message starting with 16 zero bytes followed by the hash of those zero bytes leaves brings us back to the
-initial state of the hash. The solution is thus to choose `1`, hash the hex string `0` with result `h0`, then choose `2` and provide
+Well, that's it! Any message starting with 16 zero bytes followed by the hash of those zero bytes  brings us back to the
+initial state of the hasher. The solution is thus to choose `1`, hash the hex string `00` with result `h0`, then choose `2` and provide
 an arbitrary string `x` as well as `000000000000000000000000000000<h0><x>` to produce a collision.
 
 ![image](https://user-images.githubusercontent.com/6524684/102719036-d304ff80-42eb-11eb-89fa-77924f53d533.png)
@@ -107,4 +107,4 @@ an arbitrary string `x` as well as `000000000000000000000000000000<h0><x>` to pr
 According to Gabies and trupples on Discord [this NSUCRYPTO paper](
 https://cdn.discordapp.com/attachments/520005746457575435/789598299376189450/writeup-8.pdf) of theirs details the
 approach and the math that inspired this challenge. It feels slightly more convoluted than my solution above,
-but I haven't understood whether the problem tackled there is of more general nature.
+but I haven't put in the effort to understand whether the problem tackled there is of a more general nature.
