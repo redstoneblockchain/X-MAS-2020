@@ -46,3 +46,7 @@ Funny enough, the achievements motivated me to solve the last two (50 point) pro
 Overview:
 
 ![image](https://user-images.githubusercontent.com/6524684/102716971-93381b00-42df-11eb-908e-edf21e43e1db.png)
+
+![image](https://user-images.githubusercontent.com/6524684/102936914-591a7500-44a9-11eb-876f-6595cc11e24e.png)
+
+![image](https://user-images.githubusercontent.com/6524684/102937008-8109d880-44a9-11eb-82a0-ea38af5fdae9.png)
